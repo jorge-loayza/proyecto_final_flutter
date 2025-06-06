@@ -60,12 +60,12 @@ class _SalesHistoryPageState extends ConsumerState<SalesHistoryPage> {
                           }
                           final productName =
                               product?.name ?? 'Producto eliminado';
-                          return '$productName x${item.quantity} (S/ ${item.priceAtSale})';
+                          return '$productName x${item.quantity} (Bs./ ${item.priceAtSale})';
                         })
                         .join(', ');
                     return ListTile(
                       title: Text(
-                        'Venta #${sale.id} - S/ ${sale.totalAmount.toStringAsFixed(2)}',
+                        'Venta #${sale.id} - Bs./ ${sale.totalAmount.toStringAsFixed(2)}',
                       ),
                       subtitle: Text(
                         'Fecha: ${sale.saleDate}\nProductos: $productosVendidos',
@@ -92,7 +92,7 @@ class _SalesHistoryPageState extends ConsumerState<SalesHistoryPage> {
                                               product?.name ??
                                               'Producto eliminado';
                                           return Text(
-                                            'Producto: $productName\nCantidad: ${item.quantity}\nPrecio: S/ ${item.priceAtSale}',
+                                            'Producto: $productName\nCantidad: ${item.quantity}\nPrecio: Bs./ ${item.priceAtSale}',
                                           );
                                         }).toList(),
                                   ),

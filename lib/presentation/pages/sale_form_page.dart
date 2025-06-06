@@ -41,7 +41,7 @@ class _SaleFormPageState extends ConsumerState<SaleFormPage> {
                 'Producto: ${product.name}',
                 style: const TextStyle(fontSize: 18),
               ),
-              Text('Precio: S/ ${product.price.toStringAsFixed(2)}'),
+              Text('Precio: Bs./ ${product.price.toStringAsFixed(2)}'),
               Text('Stock disponible: ${product.stock}'),
               const SizedBox(height: 16),
               TextFormField(
